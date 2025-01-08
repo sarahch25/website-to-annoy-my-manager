@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>שעות עבודה</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>שעות העבודה שלי</h1>
+        <p>בחרי יום מא-ד:</p>
+        
+        <div class="days">
+            <button onclick="showHours('sunday')">ראשון</button>
+            <button onclick="showHours('monday')">שני</button>
+            <button onclick="showHours('tuesday')">שלישי</button>
+            <button onclick="showHours('wednesday')">רביעי</button>
+        </div>
+
+        <div id="sunday" class="hours" style="display:none;">
+            <p>עד 12 בצהריים</p>
+        </div>
+        <div id="monday" class="hours" style="display:none;">
+            <p>עד 12 בצהריים או מ6 עד 12 בערב</p>
+        </div>
+        <div id="tuesday" class="hours" style="display:none;">
+            <p>מ6 עד 12 בערב</p>
+        </div>
+        <div id="wednesday" class="hours" style="display:none;">
+            <p>עד 12 בצהריים או מ6 עד 12 בערב</p>
+        </div>
+
+        <button onclick="alert('את תחת!')"> תלחצי כאן כדי לראות מסר מהלב 
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
